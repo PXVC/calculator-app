@@ -1,0 +1,116 @@
+@media screen and (max-width: 573px) {
+  .input {
+    width: 500px;
+  }
+  .theme {
+    -webkit-transform: translate(249px, -4px);
+            transform: translate(249px, -4px);
+  }
+  .toggle-bg {
+    margin-left: 260px;
+  }
+  .rows div {
+    width: 84px;
+  }
+  .buttons {
+    width: 478px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .input {
+    width: 470px;
+    height: 90px;
+  }
+  .buttons {
+    width: 445px;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .input {
+    width: 440px;
+    height: 105px;
+  }
+  .theme {
+    -webkit-transform: translate(227px, -4px);
+            transform: translate(227px, -4px);
+  }
+  .toggle-bg {
+    margin-left: 235px;
+  }
+  .buttons {
+    width: 428px;
+    padding: 15px;
+  }
+  .row {
+    padding: 2px !important;
+  }
+  .row div {
+    margin: 5px 9px !important;
+    border-radius: 7px !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .calculator,
+  #delete,
+  #reset,
+  #equal {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .input {
+    width: 365px;
+    font-size: 44px;
+  }
+  .theme {
+    -webkit-transform: translate(149px, -4px);
+            transform: translate(149px, -4px);
+  }
+  .toggle-bg {
+    margin-left: 162px;
+  }
+  .theme-toggle {
+    font-size: 17px;
+  }
+  .buttons {
+    width: 355px;
+    height: 377px;
+  }
+  .row {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .input {
+    width: 325px;
+    font-size: 37px;
+  }
+  .theme {
+    -webkit-transform: translate(126px, -4px);
+            transform: translate(126px, -4px);
+  }
+  .toggle-bg {
+    margin-left: 132px;
+  }
+  .buttons {
+    width: 317px;
+  }
+  .buttons,
+  #delete,
+  #reset,
+  #equal {
+    font-size: 25px;
+  }
+  .row div {
+    margin: 5.8px !important;
+  }
+  .attribution {
+    line-height: 25px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

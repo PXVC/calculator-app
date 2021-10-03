@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+/* Theme 1 */
+body[data-theme="theme-1"] {
+	--main-bg: hsl(222, 26%, 31%);
+	--panel: hsl(223, 31%, 20%);
+	--screen: hsl(224, 36%, 15%);
+
+	--key-1: hsl(225, 21%, 49%);
+	--key-1-shdw: hsl(224, 28%, 35%);
+	--key-2: hsl(6, 63%, 50%);
+	--key-2-shdw: hsl(6, 70%, 34%);
+	--key-3: hsl(30, 25%, 89%);
+	--key-3-shdw: hsl(28, 16%, 65%);
+
+	--input-text: hsl(0, 0%, 100%);
+	--text-1: hsl(221, 14%, 31%);
+	--text-2: hsl(0, 0%, 100%);
+	--text-3: hsl(0, 0%, 100%);
+}
+
+/* Theme 1 */
+body[data-theme="theme-2"] {
+	--main-bg: hsl(0, 0%, 90%);
+	--panel: hsl(0, 5%, 81%);
+	--screen: hsl(0, 0%, 93%);
+	
+	--key-1: hsl(185, 42%, 37%);
+	--key-1-shdw: hsl(185, 58%, 25%);
+	--key-2: hsl(25, 98%, 40%);
+	--key-2-shdw: hsl(25, 99%, 27%);
+	--key-3: hsl(45, 7%, 89%);
+	--key-3-shdw: hsl(35, 11%, 61%);
+
+	--input-text: hsl(60, 10%, 19%);
+	--text-1: hsl(60, 10%, 19%);
+	--text-2: hsl(0, 0%, 100%);
+	--text-3: hsl(0, 0%, 100%);
+}
+
+/* Theme 3 */
+body[data-theme="theme-3"] {
+	--main-bg: hsl(268, 75%, 9%);
+	--panel: hsl(268, 71%, 12%);
+	--screen: hsl(268, 71%, 12%);
+
+	--key-1: hsl(281, 89%, 26%);
+	--key-1-shdw: hsl(285, 91%, 52%);
+	--key-2: hsl(176, 100%, 44%);
+	--key-2-shdw: hsl(177, 92%, 70%);
+	--key-3: hsl(268, 47%, 21%);
+	--key-3-shdw: hsl(290, 70%, 36%);
+
+	--input-text: hsl(52, 100%, 62%);
+	--text-1: hsl(52, 100%, 62%);
+	--text-2: hsl(198, 20%, 13%);
+	--text-3: hsl(0, 0%, 100%);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// align-items: center;
+	height: 100vh;
+	overflow-y: hidden;
+	background: var(--main-bg);
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+	transition: background 200ms linear;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	transition: background 200ms linear, color 200ms linear, box-shadow 200ms linear;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--input-text);
+	user-select: none;
+}
+
+.toggle-bg {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: var(--panel);
+	width: 76px;
+	height: 25px;
+	margin-left: 331px;
+	border-radius: 50px;
+	padding: 5px;
+}
+
+.title {
+	font-size: 38px;
+	margin: 0;
+	letter-spacing: -2px;
+}
+
+.theme {
+	transform: translate(313px, -4px);
+	font-size: 17px;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.circle {
+	position: absolute;
+	background: var(--key-2);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	transition: background 200ms linear, transform 200ms ease;
+}
+
+.theme-toggle-number {
+	transform: translate(7px, -32px);
+	transition: color 200ms linear;
+}
+
+.check {
+	width: 25px;
+	height: 25px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.input {
+	background-color: var(--screen);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 550px;
+	height: 100px;
+	border-radius: 10px;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 47px;
+	color: var(--input-text);
+	overflow: hidden;
+	margin: 8px 0px;
+}
+
+.buttons {
+	background-color: var(--panel);
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 32px;
+
+	& :nth-child(1) div {
+		margin-top: 0;
+	}
+
+	div {
+		padding: 5px;
+
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 7px 12px;
+			width: 102px;
+			height: 50px;
+			border-radius: 10px;
+			color: var(--text-1);
+			background: var(--key-3);
+			box-shadow: 0px 4px 0px 0px var(--key-3-shdw);
+			cursor: pointer;
+			user-select: none;
+			transition: box-shadow 140ms, transform 200ms ease;
+
+			&:active {
+				box-shadow: 0px 0px 0px 0px var(--screen);
+				transform: translateY(4px);
+			}
+		}
+
+		& :nth-child(4) {
+			margin-right: 0;
+		}
+
+		& :nth-child(1) {
+			margin-left: 0;
+		}
+	}
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// padding: 20px;
+}
+
+#equal {
+	background: var(--key-2);
+	box-shadow: 0px 4px 0px 0px var(--key-2-shdw);
+	color: var(--text-2);
+	margin-right: 0px;
+}
+
+#reset,
+#equal {
+	width: 238px;
+	margin-bottom: 0;
+}
+
+#reset,
+#delete {
+	background: var(--key-1);
+	box-shadow: 0px 4px 0px 0px var(--key-1-shdw);
+	color: var(--text-3);
+}
+
+#delete
+#reset
+#equal {
+	transition: box-shadow 140ms;
+}
+
+#delete:active,
+#reset:active,
+#equal:active {
+	box-shadow: 0px 0px 0px 0px var(--screen);
+}
+
+.attribution {
+	color: var(--text-3);
+	text-align: center;
+	padding-top: 50px;
+	a {
+		color: var(--key-2);
+	}
+}

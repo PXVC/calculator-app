@@ -1,0 +1,75 @@
+<!-- ! Check out my channel, it's about the FRONTEND MENTOR challenge and how can I finish them ! -->
+<!-- ! Here is a the link: https://www.youtube.com/channel/UC-yrADOr74m95DfGroH_zXw. Thank you and have a all the best to you ! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	<title>Frontend Mentor | Calculator app</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body data-theme="theme-1">
+	<!-- The "data-theme" attribute used to set or change calculator theme -->
+	<div class="calculator">
+		<div class="header">
+			<p class="title">calc</p>
+			<p class="theme">THEME</p>
+			<div class="toggle-bg">
+				<div class="circle"></div>
+				<p class="theme-toggle theme-toggle-number">1</p>
+				<div class="check toggle-1"></div>
+				
+				<p class="theme-toggle theme-toggle-number">2</p>
+				<div class="check toggle-2"></div>
+				
+				<p class="theme-toggle theme-toggle-number">3</p>
+				<div class="check toggle-3"></div>
+			</div>
+		</div>
+		<h3 class="input"></h3> <!-- note: Maximum number length is 17 -->
+		<div class="buttons">
+			<div class="row">
+				<div class="number">7</div>
+				<div class="number">8</div>
+				<div class="number">9</div>
+				<div id="delete">DEL</div>
+			</div>
+			<div class="row">
+				<div class="number">4</div>
+				<div class="number">5</div>
+				<div class="number">6</div>
+				<div class="operator">+</div>
+			</div>
+			<div class="row">
+				<div class="number">1</div>
+				<div class="number">2</div>
+				<div class="number">3</div>
+				<div class="operator">-</div>
+			</div>
+			<div class="row">
+				<div class="number">.</div>
+				<div class="number">0</div>
+				<div class="operator">/</div>
+				<div class="operator">*</div>
+			</div>
+			<div class="row">
+				<div id="reset">RESET</div>
+				<div id="equal">=</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/calculator.js"></script> <!-- note: calculator's function -->
+	<script src="js/theme-switch.js"></script> <!-- note: theme switch -->
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://www.frontendmentor.io/profile/PXVC" target="_blank">PXVC</a>.
+		<!-- Click there if ya' want ;) ^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+	</div>
+</body>
+
+</html>
